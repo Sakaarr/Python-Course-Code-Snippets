@@ -1,6 +1,19 @@
 #TO DO LIST USING PYTHON CLI(COMMAND LINE INTERFACE)
 
-to_do_list = []
+FILE = "to_do_list.txt"
+
+def load_tasks():
+    try:
+        with open(FILE, 'r') as file:
+            return [line.strip() for line in file.readlines()]
+    except FileNotFoundError:
+        return []
+    
+def save_tasks(tasks):
+    with open(FILE, 'w') as file:
+        for task in tasks:
+            file.write(task + '\n')
+to_do_list = load_tasks()
 
 while True:
     print("\nTo-Do List CLI")
@@ -14,6 +27,7 @@ while True:
     if choice == '1':
         task = input("Enter the task: ")
         to_do_list.append(task)
+        save_tasks(to_do_list)
         print(f"Task '{task}' added.")
     elif choice == '2':
         if not to_do_list:
