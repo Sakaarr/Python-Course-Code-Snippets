@@ -1,0 +1,63 @@
+🔍 What Are Data Structures?
+Data Structures are ways of organizing and storing data so we can access and modify it efficiently.
+
+📦 Built-in Python Data Structures:
+We’ll cover the Big Four:
+
+
+Structure | Description                         | Example
+List      | Ordered, mutable collection         | [1, 2, 3]
+Tuple     | Ordered, immutable collection       | (1, 2, 3)
+Set       | Unordered, no duplicates            | {1, 2, 3}
+Dict      | Key-value pairs                     | {"name": "Nabin"}
+
+
+✨ Real-World Use Cases:
+
+Data Structure | Used For
+List           | Order-sensitive data
+Tuple          | GPS coordinates, config data
+Set            | Unique IDs, tags, fast lookup
+Dict           | JSON-like structured data
+
+List – like an array (but better)
+    A List is an ordered, mutable (changeable) collection of elements.
+    fruits = ["apple", "banana", "cherry"]
+    Why Use It?
+        Maintains order ✅
+        Allows duplicates ✅
+        Can store any data type ✅
+        Can be nested ✅
+    CODE - In the individual list.py file
+
+    COMMON LIST METHOD:
+
+    Method          | Description
+    .append(x)      | Add to end
+    .insert(i,x)    | Add at index
+    .pop()          | Remove last (or index) item
+    .remove(x)      | Remove first occurrence of x
+    .sort()         | Sort list in-place
+    .reverse()      | Reverse list in-place
+    .index(x)       | Get index of first occurrence
+    .count(x)       | Count how many times x appears
+
+
+Tuple – like a list, but immutable
+    Faster than lists
+
+    Used for fixed data
+
+    Can be unpacked: x, y = point
+ Set – unordered, no duplicates
+    Great for membership tests: if x in nums
+
+    Supports union, intersection, etc.  
+
+Dictionary – key-value store
+    Common Dict Methods:
+        .keys(), .values(), .items()
+
+        .get("key", default)
+
+        .update(), .pop()
